@@ -22,6 +22,37 @@ const USER_CONFIG = {
       name: '小熊宝宝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oaFM26JvjpwzcUhg8lnaHXhXZcp0',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'RN1jmxABCwlWSaPVV-xC0kr_trmG1L2VvRzSR9WoOC4',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '12-03',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '乐乐', year: '2002', date: '08-18',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '熊熊', year: '2002', date: '12-03',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2017', date: '08-01',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2017-08-18' },
+
+      ],
+    },
+  ],
+  
+    USERS: [
+    {
+      // 想要发送的人的名字
+      name: '齐家乐',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oaFM26Ael9Jw6ipOJLEdZ9Sr3duU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'RN1jmxABCwlWSaPVV-xC0kr_trmG1L2VvRzSR9WoOC4',
